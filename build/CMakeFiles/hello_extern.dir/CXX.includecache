@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/benstidham/Projects/Personal/Practice/C++/HelloWorld/helloworld.cpp
+iostream
+-
+
+/Users/benstidham/Projects/Personal/Practice/C++/HelloWorld/support.cpp
+iostream
+-
+

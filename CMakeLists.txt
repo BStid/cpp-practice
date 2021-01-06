@@ -1,4 +1,4 @@
 cmake_minimum_required (VERSION 3.16)
-project (project_name CXX)
+project (hello_extern CXX)
 
-add_executable (${PROJECT_NAME} helloworld.cpp)
+add_executable (${PROJECT_NAME} helloworld.cpp support.cpp)

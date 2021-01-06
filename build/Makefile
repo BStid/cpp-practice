@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named project_name
+# Target rules for targets named hello_extern
 
 # Build rule for target.
-project_name: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_name
-.PHONY : project_name
+hello_extern: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_extern
+.PHONY : hello_extern
 
 # fast build rule for target.
-project_name/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/build
-.PHONY : project_name/fast
+hello_extern/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/build
+.PHONY : hello_extern/fast
 
 helloworld.o: helloworld.cpp.o
 
@@ -148,7 +148,7 @@ helloworld.o: helloworld.cpp.o
 
 # target to build an object file
 helloworld.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/helloworld.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/helloworld.cpp.o
 .PHONY : helloworld.cpp.o
 
 helloworld.i: helloworld.cpp.i
@@ -157,7 +157,7 @@ helloworld.i: helloworld.cpp.i
 
 # target to preprocess a source file
 helloworld.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/helloworld.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/helloworld.cpp.i
 .PHONY : helloworld.cpp.i
 
 helloworld.s: helloworld.cpp.s
@@ -166,8 +166,35 @@ helloworld.s: helloworld.cpp.s
 
 # target to generate assembly for a file
 helloworld.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/helloworld.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
+
+support.o: support.cpp.o
+
+.PHONY : support.o
+
+# target to build an object file
+support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/support.cpp.o
+.PHONY : support.cpp.o
+
+support.i: support.cpp.i
+
+.PHONY : support.i
+
+# target to preprocess a source file
+support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/support.cpp.i
+.PHONY : support.cpp.i
+
+support.s: support.cpp.s
+
+.PHONY : support.s
+
+# target to generate assembly for a file
+support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_extern.dir/build.make CMakeFiles/hello_extern.dir/support.cpp.s
+.PHONY : support.cpp.s
 
 # Help Target
 help:
@@ -177,10 +204,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... project_name"
+	@echo "... hello_extern"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... support.o"
+	@echo "... support.i"
+	@echo "... support.s"
 .PHONY : help
 
 

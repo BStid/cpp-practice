@@ -1,9 +1,12 @@
 #include <iostream>
 
-using namespace std;
+int count;
+extern void write_extern();
 
 int main()
 {
-    cout << "Hello World" << endl;
-    cout << "Goodbye World" << endl;
+    std::cout << "Hello World" << std::endl;
+    std::cout << "Goodbye World" << std::endl;
+    count = 5;
+    write_extern();
 }
