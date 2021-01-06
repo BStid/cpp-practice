@@ -1,0 +1,3 @@
+/Users/benstidham/Projects/Personal/Practice/C++/HelloWorld/build/CMakeFiles/rebuild_cache.dir
+/Users/benstidham/Projects/Personal/Practice/C++/HelloWorld/build/CMakeFiles/edit_cache.dir
+/Users/benstidham/Projects/Personal/Practice/C++/HelloWorld/build/CMakeFiles/project_name.dir
